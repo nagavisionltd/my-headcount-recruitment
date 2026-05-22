@@ -46,7 +46,7 @@ function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.92]);
 
   return (
-    <section ref={ref} className="relative h-screen w-full overflow-hidden bg-ink text-cream">
+    <section ref={ref} className="relative h-[120vh] w-full overflow-hidden bg-ink text-cream">
       {/* Background grid */}
       <motion.div
         style={{ y: useTransform(scrollYProgress, [0, 1], [0, -100]) }}
@@ -196,7 +196,7 @@ function Sectors() {
   ];
 
   return (
-    <section ref={ref} id="sectors" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col justify-center py-24">
+    <section ref={ref} id="sectors" className="relative h-[120vh] w-full overflow-hidden bg-ink text-cream flex flex-col justify-center">
       <motion.div style={{ y }} className="absolute left-4 md:left-12 top-10 md:top-20 font-serif italic text-[12vw] text-coral/20 select-none pointer-events-none">
         sectors
       </motion.div>
@@ -314,7 +314,7 @@ function Process() {
   ];
 
   return (
-    <section ref={ref} id="process" className="relative min-h-screen h-screen w-full overflow-hidden bg-cream text-ink flex flex-col">
+    <section ref={ref} id="process" className="relative min-h-[120vh] h-[120vh] w-full overflow-hidden bg-cream text-ink flex flex-col">
       <div className="px-8 md:px-20 pt-24 pb-8">
         <motion.span
           initial={{ opacity: 0 }}
@@ -371,7 +371,7 @@ function Contact() {
   const rotate = useTransform(scrollYProgress, [0, 1], [-8, 0]);
 
   return (
-    <section ref={ref} id="contact" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col py-24">
+    <section ref={ref} id="contact" className="relative h-[120vh] w-full overflow-hidden bg-ink text-cream flex flex-col">
       <div className="flex-1 flex items-center justify-center px-6 md:px-12 relative">
         <motion.div
           style={{ scale, rotate }}
