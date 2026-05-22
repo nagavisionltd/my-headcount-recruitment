@@ -66,7 +66,7 @@ function Hero() {
         aria-hidden
       />
 
-      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 pt-32 pb-32">
+      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12">
         <div className="max-w-5xl mx-auto w-full">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -88,7 +88,7 @@ function Hero() {
           </motion.p>
 
           <h1 className="font-display text-[12vw] md:text-[8vw] leading-[0.9] tracking-[-0.03em] text-cream mb-8">
-            {"STAFFING".split("").map((c, i) => (
+            {"HEADCOUNT".split("").map((c, i) => (
               <motion.span
                 key={i}
                 initial={{ y: "110%", opacity: 0 }}
