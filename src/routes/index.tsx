@@ -197,11 +197,11 @@ function Sectors() {
 
   return (
     <section ref={ref} id="sectors" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col justify-center">
-      <motion.div style={{ y }} className="absolute -left-20 top-20 font-serif italic text-[12vw] text-coral/20 select-none pointer-events-none">
+      <motion.div style={{ y }} className="absolute left-4 md:left-12 top-10 md:top-20 font-serif italic text-[12vw] text-coral/20 select-none pointer-events-none">
         sectors
       </motion.div>
 
-      <div className="relative px-6 md:px-12 grid md:grid-cols-12 gap-8 items-end">
+      <div className="relative px-8 md:px-20 grid md:grid-cols-12 gap-8 items-end">
         <div className="md:col-span-4">
           <motion.span
             initial={{ opacity: 0, x: -20 }}
@@ -315,7 +315,7 @@ function Process() {
 
   return (
     <section ref={ref} id="process" className="relative min-h-screen h-screen w-full overflow-hidden bg-cream text-ink flex flex-col">
-      <div className="px-6 md:px-12 pt-24 pb-8">
+      <div className="px-8 md:px-20 pt-24 pb-8">
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -335,7 +335,7 @@ function Process() {
         </motion.h2>
       </div>
 
-      <div className="relative flex-1 px-6 md:px-12 pb-12">
+      <div className="relative flex-1 px-8 md:px-20 pb-12">
         <div className="absolute left-[34px] md:left-[58px] top-0 bottom-0 w-px bg-ink/10" />
         <motion.div style={{ height: lineH }} className="absolute left-[34px] md:left-[58px] top-0 w-px bg-coral origin-top" />
 
@@ -410,9 +410,6 @@ function Contact() {
             <a href="mailto:hello@myheadcount.co.uk" className="group inline-flex items-center gap-3 bg-coral text-ink px-8 py-5 text-xs uppercase tracking-[0.2em] font-semibold hover:bg-cream transition-colors">
               hello@myheadcount.co.uk
               <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </a>
-            <a href="tel:+442000000000" className="text-cream/60 text-sm hover:text-coral transition-colors">
-              or call +44 20 0000 0000
             </a>
           </motion.div>
         </div>
