@@ -66,7 +66,7 @@ function Hero() {
         aria-hidden
       />
 
-      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 pt-32 pb-12">
+      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 pt-48 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -196,7 +196,7 @@ function Sectors() {
   ];
 
   return (
-    <section ref={ref} id="sectors" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col justify-center">
+    <section ref={ref} id="sectors" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col justify-center py-24">
       <motion.div style={{ y }} className="absolute left-4 md:left-12 top-10 md:top-20 font-serif italic text-[12vw] text-coral/20 select-none pointer-events-none">
         sectors
       </motion.div>
@@ -335,7 +335,7 @@ function Process() {
         </motion.h2>
       </div>
 
-      <div className="relative flex-1 px-8 md:px-20 pb-12">
+      <div className="relative flex-1 px-8 md:px-20 pb-24">
         <div className="absolute left-[34px] md:left-[58px] top-0 bottom-0 w-px bg-ink/10" />
         <motion.div style={{ height: lineH }} className="absolute left-[34px] md:left-[58px] top-0 w-px bg-coral origin-top" />
 
@@ -371,7 +371,7 @@ function Contact() {
   const rotate = useTransform(scrollYProgress, [0, 1], [-8, 0]);
 
   return (
-    <section ref={ref} id="contact" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col">
+    <section ref={ref} id="contact" className="relative h-screen w-full overflow-hidden bg-ink text-cream flex flex-col py-24">
       <div className="flex-1 flex items-center justify-center px-6 md:px-12 relative">
         <motion.div
           style={{ scale, rotate }}
