@@ -66,29 +66,29 @@ function Hero() {
         aria-hidden
       />
 
-      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-between px-6 md:px-12 pt-48 pb-24">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease, delay: 0.2 }}
-          className="flex items-center gap-3"
-        >
-          <span className="size-2 rounded-full bg-coral animate-pulse" />
-          <span className="text-[11px] uppercase tracking-[0.3em] text-cream/60">London · Est. 2024 · Hospitality</span>
-        </motion.div>
+      <motion.div style={{ y, opacity, scale }} className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 pt-32 pb-32">
+        <div className="max-w-5xl mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease, delay: 0.2 }}
+            className="flex items-center gap-3 mb-8"
+          >
+            <span className="size-2 rounded-full bg-coral animate-pulse" />
+            <span className="text-[11px] uppercase tracking-[0.3em] text-cream/60">London · Est. 2024 · Staffing & Professional Services</span>
+          </motion.div>
 
-        <div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease, delay: 0.4 }}
-            className="font-serif italic text-2xl md:text-3xl text-cream/70 mb-6 max-w-xl"
+            className="font-serif italic text-xl md:text-2xl text-cream/70 mb-8 max-w-2xl"
           >
-            A recruitment agency for the people who run hospitality.
+            A staffing and professional services agency for businesses that value people.
           </motion.p>
 
-          <h1 className="font-display text-[20vw] md:text-[15vw] leading-[0.85] tracking-[-0.05em] text-cream">
-            {"headcount".split("").map((c, i) => (
+          <h1 className="font-display text-[12vw] md:text-[8vw] leading-[0.9] tracking-[-0.03em] text-cream mb-8">
+            {"STAFFING".split("").map((c, i) => (
               <motion.span
                 key={i}
                 initial={{ y: "110%", opacity: 0 }}
@@ -105,10 +105,10 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease, delay: 1.2 }}
-            className="mt-8 flex flex-wrap items-end justify-between gap-6"
+            className="flex flex-wrap items-end justify-between gap-6"
           >
             <p className="max-w-md text-cream/70 text-sm md:text-base leading-relaxed">
-              We place chefs, managers, sommeliers and front-of-house leaders into London's most discerning kitchens, hotels and dining rooms.
+              Connecting exceptional talent with leading organizations across hospitality, corporate, and professional sectors.
             </p>
             <div className="flex gap-3">
               <a href="#contact" className="group inline-flex items-center gap-3 bg-coral text-ink px-6 py-4 text-xs uppercase tracking-[0.2em] font-semibold hover:bg-cream transition-colors">
