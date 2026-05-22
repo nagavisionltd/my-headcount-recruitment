@@ -21,7 +21,7 @@ function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mix-blend-difference">
       <div className="flex items-center justify-between px-6 md:px-12 py-6">
-        <span className="font-display text-cream text-lg tracking-tight">headcount</span>
+        <img src="https://github.com/nagavisionltd/my-headcount-recruitment/blob/main/src/assets/header-headcount-logo-white.png?raw=true" alt="headcount" className="h-8" />
         <nav className="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] text-cream font-medium">
           <a href="#ethos" className="hover:text-coral transition-colors">Ethos</a>
           <a href="#sectors" className="hover:text-coral transition-colors">Sectors</a>
@@ -196,7 +196,7 @@ function Sectors() {
   ];
 
   return (
-    <section ref={ref} id="sectors" className="relative h-[120vh] w-full overflow-hidden bg-ink text-cream flex flex-col justify-center">
+    <section ref={ref} id="sectors" className="relative h-[120vh] w-full overflow-hidden bg-ink text-cream flex flex-col justify-center py-32">
       <motion.div style={{ y }} className="absolute left-4 md:left-12 top-10 md:top-20 font-serif italic text-[12vw] text-coral/20 select-none pointer-events-none">
         sectors
       </motion.div>
