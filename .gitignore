@@ -5,29 +5,9 @@ node_modules/
 # Build outputs
 dist/
 build/
-*.js.map
-*.ts.map
+target/
 
-# Environment variables
-.env
-.env.local
-.env.*
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-.DS_Store
-Thumbs.db
-
-# Python (if applicable)
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -36,95 +16,40 @@ __pycache__/
 env/
 venv/
 .venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+.ENV
+.python-version
+
+# Logs
 *.log
-.git/
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
 
-# Node.js (if applicable)
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-jspm_packages/
-*.npm
-.npm
-bower_components/
-.jspm/
-.nyc_output
-coverage/
-.nyc_output/
-istanbul/
-.repl_history
-.vercel/
-.now/
+# Environment variables
+.env
+.env.local
+.env.*
 
-# Rust (if applicable)
-target/
-Cargo.lock
-*.rs.bk
-
-# Go (if applicable)
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.prof
-
-# Java (if applicable)
-*.class
-*.jar
-*.war
-*.ear
-*.nar
-hs_err_pid*
-replay_pid*
-
-# C/C++ (if applicable)
-*.o
-*.a
-*.obj
-*.lib
-*.so
-*.dylib
-*.dll
-*.ilk
-*.pdb
-*.gch
-*.ii
-*.vi
-*.slo
-*.lo
-*.la
-*.al
-*.c.o
-*.c.i
-*.cii
-*.o.d
-*.bin
-*.out
-*.ko
-*.mod.c
-*.manifest
-*.rc
-*.res
-*.stackdump
+# IDE files
+.vscode/
+.idea/
 *.swp
 *.swo
+*.tmp
 
-# Compression
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+
+# Compressed files
 *.zip
 *.gz
 *.tar
@@ -147,22 +72,4 @@ replay_pid*
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Gradle
-.gradle/
-build/
-
-# Maven
-target/
-!src/main/**
-!pom.xml
-
-# Temporary folders
-tmp/
-temp/
 ```
